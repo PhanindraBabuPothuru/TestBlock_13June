@@ -77,15 +77,12 @@
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>TA_Test.Core</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>TA_Test.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TC_Sample" sap:VirtualizedContainerService.HintSize="1276,1199" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="i">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="13" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="13" Name="i" />
       <Variable x:TypeArguments="x:String" Name="str_Val" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -107,7 +104,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[i&lt;=13]" sap:VirtualizedContainerService.HintSize="470,459" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[i&lt;13]" sap:VirtualizedContainerService.HintSize="470,459" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
