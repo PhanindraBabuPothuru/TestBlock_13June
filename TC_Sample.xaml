@@ -83,7 +83,7 @@
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="i">
         <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="10" />
+          <Literal x:TypeArguments="x:Int32" Value="17" />
         </Variable.Default>
       </Variable>
       <Variable x:TypeArguments="x:String" Name="str_Val" />
